@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Santiago Boza, focused on relevant software projects."
+    />
+    <title>Santiago Boza | Portfolio</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-logo" href="#">Santiago Boza</a>
+        <div class="site-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Software Portfolio</p>
+          <h1 id="hero-title">Relevant projects, clear impact.</h1>
+          <p>
+            A focused portfolio for presenting selected work, technical decisions,
+            and the value behind each project.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div id="projects-list" class="projects-grid"></div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <p class="section-copy">
+          Add a short introduction here: who you are, what you build, and the type
+          of roles or collaborations you want this portfolio to support.
+        </p>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Connect</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <p class="section-copy">
+          Add your email, GitHub, LinkedIn, or any preferred contact links here.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="src/scripts/main.js"></script>
+  </body>
+</html>
