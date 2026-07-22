@@ -42,7 +42,7 @@ export const profile: ProfileData = {
 // Contact items include the channels I want to share publicly.
 export const contactItems: ContactItem[] = [
   {
-    label: "Professional email",
+    label: "Academic email",
     value: profile.email,
     href: `mailto:${profile.email}`,
   },

@@ -1,4 +1,5 @@
 import airtecCover from "../assets/images/AirTEC.png";
+import computerArchitectureCover from "../assets/images/computer-architecture-foundations-cover.png";
 import donceyCover from "../assets/images/DonCEy Kong.png";
 import geneticCover from "../assets/images/Genetic.png";
 import nutritecCover from "../assets/images/NutriTEC.png";
@@ -72,5 +73,19 @@ export const projects: Project[] = [
     imageSrc: tinySqlCover,
     imageAlt: "TinySQL educational SQL engine project cover",
     repositoryUrl: "https://github.com/SRZpeedTEC/TinySQLDbOFICIAL",
+  },
+  {
+    id: "computer-architecture-foundations",
+    title: "Computer Architecture Foundations",
+    category: "Computer Architecture & Digital Systems",
+    summary:
+      "An interactive RISC-V processor simulator and FPGA elevator system developed to explore processor execution, digital logic, finite-state machines, and hardware-software integration.",
+    collaboration:
+      "I worked on this collaborative university project to connect processor simulation, digital logic, and hardware-oriented problem solving.",
+    technologies: ["SystemVerilog", "Python", "PySide6", "RISC-V", "FPGA"],
+    imageSrc: computerArchitectureCover,
+    imageAlt:
+      "Computer Architecture Foundations RISC-V processor simulator and FPGA elevator project cover",
+    repositoryUrl: "https://github.com/SRZpeedTEC/-sboza-compu-archi-found-G1-2026",
   },
 ];

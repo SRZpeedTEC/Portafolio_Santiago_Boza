@@ -46,13 +46,14 @@ Vite will print the local URL, usually `http://localhost:5173/`.
 
 ## Featured Projects
 
-The portfolio currently highlights five approved projects:
+The portfolio currently highlights six selected projects:
 
 - NutriTEC
 - TECAir
 - DonCEy Kong Jr
 - Genetic Kingdom
 - TinySQL
+- Computer Architecture Foundations
 
 Project content lives in `src/data/projects.ts`, with the shared data shape in
 `src/types/project.ts`.
@@ -69,6 +70,7 @@ Current image mapping:
 - `DonCEy Kong.png` -> DonCEy Kong Jr
 - `Genetic.png` -> Genetic Kingdom
 - `TinySQL.png` -> TinySQL
+- `computer-architecture-foundations-cover.png` -> Computer Architecture Foundations
 - `Personal.jpeg` -> hero portrait
 
 ## Available Commands
