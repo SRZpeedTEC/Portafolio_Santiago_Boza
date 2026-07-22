@@ -1,0 +1,24 @@
+.header {
+  max-width: 720px;
+  margin-bottom: clamp(1.75rem, 5vw, 3rem);
+}
+
+.header h2 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2rem, 6vw, 3.8rem);
+}
+
+.header p:not(.eyebrow) {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.eyebrow {
+  margin-bottom: 0.55rem;
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
