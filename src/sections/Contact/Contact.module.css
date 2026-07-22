@@ -4,7 +4,6 @@
 
 .panel {
   display: grid;
-  gap: 1.5rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface-raised);
@@ -35,17 +34,4 @@
 
 .item:hover strong {
   color: var(--color-accent);
-}
-
-.note {
-  max-width: 26rem;
-  margin-bottom: 0;
-  color: var(--color-text-muted);
-}
-
-@media (min-width: 760px) {
-  .panel {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: end;
-  }
 }

@@ -4,7 +4,7 @@ import { Reveal } from "../../components/ui/Reveal";
 import { contactItems } from "../../data/profile";
 import styles from "./Contact.module.css";
 
-// Contact publishes only verified public channels and omits CV download until an asset is included.
+// Contact publishes only verified public channels for professional follow-up.
 export function Contact() {
   return (
     <Section id="contact" labelledBy="contact-title" className={styles.section}>
@@ -25,10 +25,6 @@ export function Contact() {
               </a>
             ))}
           </div>
-          <p className={styles.note}>
-            CV download will be added when a reviewed public PDF is included in the
-            application.
-          </p>
         </div>
       </Reveal>
     </Section>

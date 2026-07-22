@@ -6,7 +6,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-// ProjectCard keeps the overview concise and reveals evidence-backed details on demand.
+// ProjectCard keeps each project concise so visitors can scan the selected work quickly.
 export function ProjectCard({ project }: ProjectCardProps) {
   const shouldReduceMotion = useReducedMotion();
   const projectLinks = [
@@ -36,57 +36,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
       whileHover={shouldReduceMotion ? undefined : { y: -5 }}
       transition={{ duration: 0.18, ease: "easeOut" }}
     >
-      <div className={styles.visual} role="img" aria-label={project.imageAlt}>
-        <span>{project.imageLabel}</span>
+      <div className={styles.visual}>
+        <img src={project.imageSrc} alt={project.imageAlt} loading="lazy" />
       </div>
       <div className={styles.content}>
-        <div className={styles.meta}>
-          <span>{project.status}</span>
-          <span>{project.visibility}</span>
-        </div>
         <p className={styles.category}>{project.category}</p>
         <h3>{project.title}</h3>
         <p>{project.summary}</p>
+        <p className={styles.collaboration}>{project.collaboration}</p>
         <div className={styles.tags} aria-label={`Technologies for ${project.title}`}>
           {project.technologies.map((technology) => (
             <span key={technology}>{technology}</span>
           ))}
         </div>
-        <details className={styles.details}>
-          <summary>Project details</summary>
-          <p>{project.description}</p>
-          <dl>
-            <div>
-              <dt>Context</dt>
-              <dd>{project.problem}</dd>
-            </div>
-            <div>
-              <dt>Architecture</dt>
-              <dd>{project.architecture}</dd>
-            </div>
-            <div>
-              <dt>Contribution</dt>
-              <dd>{project.role}</dd>
-            </div>
-            <div>
-              <dt>Collaboration</dt>
-              <dd>{project.collaboration}</dd>
-            </div>
-            <div>
-              <dt>Challenge</dt>
-              <dd>{project.challenge}</dd>
-            </div>
-            <div>
-              <dt>Takeaway</dt>
-              <dd>{project.takeaway}</dd>
-            </div>
-          </dl>
-          <ul>
-            {project.mainFunctionality.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </details>
         {projectLinks.length > 0 ? (
           <div className={styles.links}>
             {projectLinks.map((link) => (

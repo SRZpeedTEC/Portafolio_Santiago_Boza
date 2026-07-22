@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from "motion/react";
 import { Container } from "../../components/layout/Container";
 import { Button } from "../../components/ui/Button";
 import { SocialLink } from "../../components/ui/SocialLink";
+import personalPhoto from "../../assets/images/Personal.jpeg";
 import { profile } from "../../data/profile";
 import styles from "./Hero.module.css";
 
@@ -42,13 +43,11 @@ export function Hero() {
         </motion.div>
         <motion.div
           className={styles.visual}
-          aria-label="Reserved area for a future professional portrait or illustration"
-          role="img"
           initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.98 }}
           animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.08 }}
         >
-          <span>Computer engineering, full-stack systems, and technical projects</span>
+          <img src={personalPhoto} alt="Portrait of Santiago Boza Quiros" />
         </motion.div>
       </Container>
     </section>
