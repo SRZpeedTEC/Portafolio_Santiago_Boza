@@ -20,7 +20,7 @@ export interface ProfileData {
   footerNote: string;
 }
 
-// Profile facts are limited to verified public sources from the CV and GitHub profile.
+// Profile data keeps the public contact and hero content in one place.
 export const profile: ProfileData = {
   fullName: "Santiago Boza Quirós",
   title: "Computer Engineering student and full-stack software developer",
@@ -39,7 +39,7 @@ export const profile: ProfileData = {
   footerNote: "Computer Engineering student at Tecnológico de Costa Rica.",
 };
 
-// Contact items intentionally omit phone details until Santiago confirms public use.
+// Contact items include the channels I want to share publicly.
 export const contactItems: ContactItem[] = [
   {
     label: "Professional email",

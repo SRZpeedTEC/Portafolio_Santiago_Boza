@@ -4,7 +4,7 @@ import { Reveal } from "../../components/ui/Reveal";
 import { aboutDetails, aboutIntro } from "../../data/about";
 import styles from "./About.module.css";
 
-// About balances concise profile writing with structured facts that are easy to verify.
+// About keeps the personal introduction short and direct.
 export function About() {
   return (
     <Section id="about" labelledBy="about-title">
@@ -12,7 +12,7 @@ export function About() {
         <SectionHeader
           eyebrow="About me"
           title="Building from academic work into professional practice"
-          description="A concise view of Santiago's current technical direction and verified public profile."
+          description="A short view of what I am studying, building, and improving."
         />
       </Reveal>
       <Reveal>

@@ -6,7 +6,7 @@ import personalPhoto from "../../assets/images/Personal.jpeg";
 import { profile } from "../../data/profile";
 import styles from "./Hero.module.css";
 
-// Hero uses verified profile data and keeps the introduction concise for first-pass scanning.
+// Hero introduces the portfolio with the main profile message and actions.
 export function Hero() {
   const shouldReduceMotion = useReducedMotion();
 
@@ -30,13 +30,10 @@ export function Hero() {
             </Button>
           </div>
           <div className={styles.socials} aria-label="Professional profiles">
-            <SocialLink href={profile.github.url} label="Open Santiago's GitHub profile">
+            <SocialLink href={profile.github.url} label="Open my GitHub profile">
               {profile.github.label}
             </SocialLink>
-            <SocialLink
-              href={profile.linkedin.url}
-              label="Open Santiago's LinkedIn profile"
-            >
+            <SocialLink href={profile.linkedin.url} label="Open my LinkedIn profile">
               {profile.linkedin.label}
             </SocialLink>
           </div>
@@ -47,7 +44,7 @@ export function Hero() {
           animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.08 }}
         >
-          <img src={personalPhoto} alt="Portrait of Santiago Boza Quiros" />
+          <img src={personalPhoto} alt="Portrait photo" />
         </motion.div>
       </Container>
     </section>

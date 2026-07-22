@@ -9,7 +9,7 @@ export const aboutIntro = [
   "I am interested in contributing to real projects, expanding my technical judgment, gaining professional experience, and collaborating with new teams.",
 ];
 
-// About details keep the profile factual while avoiding temporary review language in the UI.
+// About details keep the profile direct and easy to read.
 export const aboutDetails: AboutDetail[] = [
   {
     title: "Academic background",
@@ -38,7 +38,7 @@ export const aboutDetails: AboutDetail[] = [
     items: [
       "Prioritize user experience, needs, and ease of use.",
       "Coordinate work through version control, task distribution, testing, and problem solving.",
-      "Use documentation and structured review to make projects easier to maintain.",
+      "Use documentation and clear communication to make projects easier to maintain.",
     ],
   },
   {

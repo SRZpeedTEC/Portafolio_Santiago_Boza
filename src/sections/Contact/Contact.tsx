@@ -4,7 +4,7 @@ import { Reveal } from "../../components/ui/Reveal";
 import { contactItems } from "../../data/profile";
 import styles from "./Contact.module.css";
 
-// Contact publishes only verified public channels for professional follow-up.
+// Contact shares the channels I use for professional follow-up.
 export function Contact() {
   return (
     <Section id="contact" labelledBy="contact-title" className={styles.section}>
@@ -12,7 +12,7 @@ export function Contact() {
         <SectionHeader
           eyebrow="Contact"
           title="Professional contact"
-          description="Verified public contact channels for professional and academic opportunities."
+          description="The best ways to reach me for professional and academic opportunities."
         />
       </Reveal>
       <Reveal>

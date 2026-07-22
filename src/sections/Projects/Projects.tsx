@@ -5,7 +5,7 @@ import { Reveal } from "../../components/ui/Reveal";
 import { projects } from "../../data/projects";
 import styles from "./Projects.module.css";
 
-// Projects displays manually selected cards backed by an explicit Project interface.
+// Projects displays a focused selection of my academic and technical work.
 export function Projects() {
   return (
     <Section id="projects" labelledBy="projects-title">
@@ -13,7 +13,7 @@ export function Projects() {
         <SectionHeader
           eyebrow="Relevant projects"
           title="Selected technical work"
-          description="A curated set of academic projects chosen for scope, differentiation, and verifiable repository evidence."
+          description="A focused selection of projects that represent what I like to build and the problems I enjoy solving."
         />
       </Reveal>
       <div className={styles.grid}>

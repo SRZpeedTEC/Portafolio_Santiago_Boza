@@ -1,29 +1,28 @@
 import type { SkillGroupData } from "../types/skill";
 
-// Skills are grouped by verified profile information and repository source evidence.
+// Skills are grouped around the areas I use most in my projects.
 export const skillGroups: SkillGroupData[] = [
   {
     title: "Software development",
     description:
-      "CV and repository evidence show academic development across web systems, data structures, and foundational programming.",
+      "I work across web systems, data structures, and foundational programming.",
     skills: ["C#", ".NET", "C", "Java", "Python", "Racket"],
   },
   {
     title: "Frontend development",
     description:
-      "CV and repositories show frontend work through React views, service modules, HTML, CSS, and JavaScript interfaces.",
+      "I build interfaces with React, service modules, HTML, CSS, and JavaScript.",
     skills: ["React", "Vite", "JavaScript", "CSS Modules", "Bootstrap"],
   },
   {
     title: "Backend and APIs",
-    description:
-      "CV-backed projects include backend construction and integration for full-stack academic systems.",
+    description: "I build and connect backend services for full-stack academic systems.",
     skills: ["ASP.NET Core", "REST APIs", "Dependency injection", "Service layers"],
   },
   {
     title: "Databases and data",
     description:
-      "Project evidence includes SQL, database design, relational scripts, MongoDB API structure, and custom storage practice.",
+      "I work with SQL, database design, relational scripts, MongoDB, and custom storage practice.",
     skills: [
       "SQL",
       "SQL Server",
@@ -36,7 +35,7 @@ export const skillGroups: SkillGroupData[] = [
   {
     title: "Artificial intelligence and automation",
     description:
-      "The CV verifies practical work with AI-assisted workflows, prompt evaluation, agents, and automation.",
+      "I use AI-assisted workflows for prompt evaluation, agents, automation, and prototyping.",
     skills: [
       "Prompt design",
       "Prompt evaluation",
@@ -48,7 +47,7 @@ export const skillGroups: SkillGroupData[] = [
   {
     title: "Computer-engineering foundations",
     description:
-      "Academic repositories include hardware description, processor simulation, assembly examples, and networking practice.",
+      "I also practice hardware description, processor simulation, assembly, and networking fundamentals.",
     skills: ["SystemVerilog", "FPGA workflows", "Assembly", "Client-server protocols"],
   },
 ];

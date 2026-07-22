@@ -1,8 +1,8 @@
 # Portafolio Santiago Boza
 
-Professional frontend portfolio for Santiago Boza Quiros, a Computer Engineering
-student at Tecnologico de Costa Rica. The site presents profile information,
-technical skills, contact links, and selected academic software projects.
+This is my frontend portfolio as a Computer Engineering student at Tecnologico
+de Costa Rica. It presents my profile, technical skills, contact links, and
+selected academic software projects.
 
 ## Stack
 

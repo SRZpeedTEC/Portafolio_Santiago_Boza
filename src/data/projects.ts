@@ -5,7 +5,7 @@ import nutritecCover from "../assets/images/NutriTEC.png";
 import tinySqlCover from "../assets/images/TinySQL.png";
 import type { Project } from "../types/project";
 
-// Featured projects are manually curated from CV context and repository evidence.
+// Featured projects are the strongest examples I want to show first.
 export const projects: Project[] = [
   {
     id: "nutritec",
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     summary:
       "Full-stack academic platform for nutrition workflows, including user and patient management, nutritional plans, measurements, progress tracking, recipes, and client/admin interfaces.",
     collaboration:
-      "Collaborative academic project with work across backend service integration, databases, and client/admin interfaces.",
+      "I worked across backend service integration, databases, and client/admin interfaces in this collaborative academic project.",
     technologies: ["ASP.NET Core", "C#", "React", "Vite", "SQL Server", "MongoDB"],
     imageSrc: nutritecCover,
     imageAlt: "NutriTEC nutrition-management platform project cover",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     summary:
       "Full-stack academic platform for flight and itinerary management, reservations, passenger check-in, seat assignment, baggage handling, promotions, and administrative/client-facing interfaces.",
     collaboration:
-      "Developed as part of a four-person university team, with contributions to backend integration, web interfaces, and database work.",
+      "I built this with a four-person university team, contributing to backend integration, web interfaces, and database work.",
     technologies: ["ASP.NET Core", "C#", "PostgreSQL", "React", "Vite", "Capacitor"],
     imageSrc: airtecCover,
     imageAlt:
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     summary:
       "Academic game project with Raylib-based player and spectator clients, client-server communication, server administration, and retro platform gameplay.",
     collaboration:
-      "Collaborative academic project combining C client code, Java server logic, networking, and gameplay systems.",
+      "I worked on this collaborative academic game using C client code, Java server logic, networking, and gameplay systems.",
     technologies: ["C", "Raylib", "Java", "CMake", "Client-server networking", "TLV"],
     imageSrc: donceyCover,
     imageAlt: "DonCEy Kong Jr retro networked platform game project cover",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     summary:
       "C++ and SFML academic strategy project that combines tower-defense style gameplay with pathfinding, wave management, tower placement, and genetic-algorithm concepts.",
     collaboration:
-      "Collaborative academic project focused on gameplay systems, pathfinding, custom data structures, and simulation logic.",
+      "I worked on gameplay systems, pathfinding, custom data structures, and simulation logic for this collaborative academic project.",
     technologies: ["C++", "SFML", "Pathfinding", "Genetic algorithms", "Data structures"],
     imageSrc: geneticCover,
     imageAlt: "Genetic Kingdom evolutionary strategy simulation project cover",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     summary:
       "Educational C# database-engine implementation with SQL-like parsing, query execution, file-based storage, system catalogs, and tree-based indexes.",
     collaboration:
-      "Academic project focused on database internals, storage management, query processing, and data-structure practice.",
+      "I used this project to practice database internals, storage management, query processing, and data structures.",
     technologies: ["C#", ".NET", "SQL parsing", "File storage", "B-tree", "BST"],
     imageSrc: tinySqlCover,
     imageAlt: "TinySQL educational SQL engine project cover",
