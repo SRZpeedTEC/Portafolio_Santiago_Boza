@@ -1,33 +1,10 @@
 import { Section } from "../../components/layout/Section";
 import { SectionHeader } from "../../components/layout/SectionHeader";
-import { Button } from "../../components/ui/Button";
 import { Reveal } from "../../components/ui/Reveal";
+import { contactItems } from "../../data/profile";
 import styles from "./Contact.module.css";
 
-const contactItems = [
-  {
-    label: "Professional email",
-    value: "[Contact information]",
-    href: "mailto:professional.email@example.com",
-  },
-  {
-    label: "GitHub",
-    value: "[GitHub]",
-    href: "#",
-  },
-  {
-    label: "LinkedIn",
-    value: "[LinkedIn]",
-    href: "#",
-  },
-  {
-    label: "Location",
-    value: "[Location]",
-    href: "#",
-  },
-];
-
-// Contact keeps outreach simple with standard links and no backend or third-party form.
+// Contact publishes only verified public channels and omits CV download until an asset is included.
 export function Contact() {
   return (
     <Section id="contact" labelledBy="contact-title" className={styles.section}>
@@ -35,7 +12,7 @@ export function Contact() {
         <SectionHeader
           eyebrow="Contact"
           title="Professional contact"
-          description="[Contact information]"
+          description="Verified public contact channels for professional and academic opportunities."
         />
       </Reveal>
       <Reveal>
@@ -48,9 +25,10 @@ export function Contact() {
               </a>
             ))}
           </div>
-          <Button href="#" variant="secondary" aria-label="Download CV placeholder">
-            Download CV
-          </Button>
+          <p className={styles.note}>
+            CV download will be added when a reviewed public PDF is included in the
+            application.
+          </p>
         </div>
       </Reveal>
     </Section>

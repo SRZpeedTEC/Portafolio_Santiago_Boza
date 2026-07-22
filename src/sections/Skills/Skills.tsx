@@ -5,7 +5,7 @@ import { SkillGroup } from "../../components/ui/SkillGroup";
 import { skillGroups } from "../../data/skills";
 import styles from "./Skills.module.css";
 
-// Skills renders typed placeholder groups without arbitrary scores or progress indicators.
+// Skills renders verified capability groups without arbitrary scores or progress indicators.
 export function Skills() {
   return (
     <Section id="skills" labelledBy="skills-title" className={styles.section}>
@@ -13,7 +13,7 @@ export function Skills() {
         <SectionHeader
           eyebrow="Skills"
           title="Technical areas"
-          description="[Skill category]"
+          description="Grouped by public profile information and source-code evidence from the repository audit."
         />
       </Reveal>
       <div className={styles.grid}>

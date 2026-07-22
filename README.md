@@ -2,24 +2,23 @@
 
 ## Project Overview
 
-Professional software-development portfolio for Santiago Boza Quirós, a Computer
-Engineering student. This first iteration establishes the application foundation,
-layout system, placeholder content model, responsive navigation, and accessible
-interaction patterns.
+Professional portfolio for Santiago Boza Quirós, a Computer Engineering student
+at Tecnológico de Costa Rica. The site presents verified profile information,
+technical skills, and a curated set of academic software projects.
 
 ## Current Status
 
-Initial frontend architecture is in place. The site uses meaningful placeholders
-only and does not yet include final personal information, real project case
-studies, production images, contact links, or a downloadable CV.
+Second iteration in progress. The portfolio now includes CV-backed personal
+content, verified contact links, GitHub-repository-based project descriptions,
+and review documents for remaining owner confirmations.
 
 ## Objectives
 
-- Present a clean single-page portfolio structure.
-- Keep content easy to replace through typed data files.
-- Support responsive navigation and accessible keyboard interaction.
-- Establish strict TypeScript, ESLint, Prettier, and Vite configuration.
-- Prepare the project for future deployment on Vercel.
+- Present Santiago's academic and technical profile in a concise web format.
+- Feature selected projects using evidence from CV content and repository source.
+- Keep project content manually curated and easy to review.
+- Preserve the minimalist React/Vite design system from iteration one.
+- Document repository-quality gaps before public promotion.
 
 ## Technology Stack
 
@@ -37,8 +36,10 @@ studies, production images, contact links, or a downloadable CV.
 - Sticky responsive navigation with active-section feedback.
 - Accessible collapsible mobile menu.
 - Hero, About, Skills, Projects, Contact, and Footer sections.
-- Reusable layout, button, social link, skill, and project card components.
-- Typed placeholder data for navigation, skills, projects, and profile details.
+- CV-backed profile summary, academic highlights, language information, and
+  IntegraTEC leadership involvement.
+- Typed project data with optional links, visibility notes, and expandable
+  details.
 - Reduced-motion support for Motion and CSS animations.
 
 ## Local Prerequisites
@@ -68,35 +69,18 @@ npm run typecheck
 
 ```text
 .
+├── docs
+│   ├── content-review.md
+│   └── github-repository-audit.md
 ├── public
 │   └── favicon.svg
 ├── src
 │   ├── assets
-│   │   ├── icons
-│   │   └── images
 │   ├── components
-│   │   ├── layout
-│   │   ├── navigation
-│   │   └── ui
 │   ├── data
-│   │   ├── about.ts
-│   │   ├── navigation.ts
-│   │   ├── projects.ts
-│   │   └── skills.ts
 │   ├── sections
-│   │   ├── About
-│   │   ├── Contact
-│   │   ├── Footer
-│   │   ├── Hero
-│   │   ├── Projects
-│   │   └── Skills
 │   ├── styles
-│   │   ├── globals.css
-│   │   ├── tokens.css
-│   │   └── utilities.css
 │   ├── types
-│   │   ├── project.ts
-│   │   └── skill.ts
 │   ├── App.tsx
 │   └── main.tsx
 ├── index.html
@@ -114,15 +98,14 @@ The palette is defined in `src/styles/tokens.css` with CSS custom properties:
 - Black: `#000000`
 - Light neutral: `#EEEEEE`
 
-Bright green is reserved for active states, important actions, focus indicators,
-links, and small highlights. Large surfaces remain black or dark green to keep the
-interface readable and professional.
+Bright green is used selectively for active navigation, important actions,
+links, focus indicators, and small highlights.
 
 ## Animation Approach
 
-Motion for React is used selectively for entrance reveals, navigation indicators,
+Motion for React is used for purposeful entrance reveals, navigation indicators,
 button feedback, mobile-menu transitions, and project-card hover movement.
-Animations are short, based on opacity and transform, and respect reduced-motion
+Animations are short, transform/opacity based, and respect reduced-motion
 preferences.
 
 ## Accessibility Considerations
@@ -133,42 +116,86 @@ preferences.
 - Visible `:focus-visible` indicators.
 - `aria-expanded` and `aria-controls` on the mobile menu button.
 - Reduced-motion support in CSS and Motion components.
-- Placeholder visual areas use explicit accessible labels.
+- Project visuals use descriptive placeholder labels.
 
 ## Responsive-Design Approach
 
 The implementation is mobile-first. Layouts use flexible Grid and Flexbox rules
-to adapt from narrow screens to large desktop widths without horizontal overflow.
-Cards collapse to one column on small screens and expand into multiple columns
-when space allows.
+to adapt from narrow screens to desktop widths without horizontal overflow.
+Project cards collapse to one column on small screens and expand as space allows.
 
-## Content Replacement Guide
+## Content Sources
 
-Replace placeholder values in:
+- CV provided locally by Santiago.
+- Public GitHub profile README under `SRZpeedTEC`.
+- Read-only inspection of repositories under the `SRZpeedTEC` account.
+- Repository source code, manifests, README files, tests, docs, and media scans.
 
-- `src/data/about.ts`
-- `src/data/skills.ts`
-- `src/data/projects.ts`
-- `src/sections/Hero/Hero.tsx`
-- `src/sections/Contact/Contact.tsx`
-- `src/sections/Footer/Footer.tsx`
+## Project Information Model
 
-Use real project URLs, social links, image assets, and contact details only when
-they are ready to publish.
+Featured projects are stored in `src/data/projects.ts` using the explicit
+`Project` interface in `src/types/project.ts`. Each project supports title,
+category, summary, longer description, context, functionality, technologies,
+architecture, contribution wording, collaboration context, challenge, takeaway,
+optional links, visibility, status, and visual placeholder text.
+
+Repository links are optional. TECAir and NutriTEC links are currently withheld
+because the audit found configuration files that should be sanitized before the
+portfolio points visitors directly to those repositories.
+
+## Featured-Project Selection
+
+Featured projects were selected manually based on technical relevance, scope,
+differentiation, code organization, documentation, visual evidence, setup
+reproducibility, and GitHub presentation quality.
+
+Current featured set:
+
+- NutriTEC
+- TECAir
+- CineTEC
+- Computer Architecture Foundations
+- TinySQLDbOFICIAL
+
+The full repository audit is available in `docs/github-repository-audit.md`.
+
+## Project Images
+
+No images were copied into the portfolio during this iteration. Some repositories
+contain app assets, generated build output, icons, uploaded files, or sprites,
+but clean public-safe screenshots still need Santiago's review.
+
+Use `src/assets/images` for future optimized screenshots. Prefer descriptive
+filenames and meaningful alternative text.
+
+## Remaining Review Items
+
+See `docs/content-review.md` for owner-confirmation items, including public CV
+download approval, phone-number privacy, project contribution wording, repository
+cleanup, screenshots, deployment links, and private repository visibility.
 
 ## Deployment Guidance For Vercel
 
-1. Push the repository to GitHub.
+1. Push the reviewed repository to GitHub.
 2. Import the repository in Vercel.
 3. Use the default Vite settings.
 4. Build command: `npm run build`.
 5. Output directory: `dist`.
 6. Add a custom domain after the production version is reviewed.
 
+## GitHub Metadata Synchronization
+
+Build-time GitHub synchronization was evaluated but not implemented. The current
+iteration needs manually curated project content because project purpose,
+contribution, collaboration, and repository security status require owner review.
+
+A future sync script could enrich selected public projects with cached metadata
+without exposing a GitHub token to the browser.
+
 ## Development Methodology
 
 Work in small iterations. Keep components focused, preserve typed data sources,
-avoid fictional content, and validate TypeScript, linting, formatting, and builds
+avoid unsupported claims, and validate TypeScript, linting, formatting, and builds
 before publishing.
 
 ## Roadmap
@@ -178,11 +205,14 @@ before publishing.
 - [x] Portfolio section structure
 - [x] Base design system
 - [x] Initial accessible animations
-- [ ] Add final personal content
-- [ ] Add real project case studies
-- [ ] Add portfolio images
-- [ ] Add downloadable CV
-- [ ] Complete social and contact links
+- [x] Add CV-backed personal content
+- [x] Add GitHub-informed project content
+- [x] Add repository audit and content review documents
+- [ ] Confirm final public wording with Santiago
+- [ ] Sanitize TECAir and NutriTEC repository configuration before linking
+- [ ] Add real project case-study screenshots
+- [ ] Add reviewed downloadable CV
+- [ ] Add verified deployment links
 - [ ] Add tests where valuable
 - [ ] Deploy the production version
 - [ ] Configure a custom domain

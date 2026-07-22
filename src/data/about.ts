@@ -3,22 +3,57 @@ export interface AboutDetail {
   items: string[];
 }
 
-// Placeholder profile data keeps personal content easy to replace without editing layout code.
+export const aboutIntro = [
+  "I am a sixth-semester Computer Engineering student at Tecnológico de Costa Rica, currently building a portfolio around full-stack academic systems and computer-engineering foundations.",
+  "My work connects backend services, relational and non-relational data, frontend interfaces, and user-centered workflows. I also work with AI-assisted processes for prompt design, agent configuration, task automation, analysis, and prototyping.",
+  "I am interested in contributing to real projects, expanding my technical judgment, gaining professional experience, and collaborating with new teams.",
+];
+
+// About details are sourced from the CV, GitHub profile README, and repository evidence.
 export const aboutDetails: AboutDetail[] = [
   {
     title: "Academic background",
-    items: ["[Academic and professional background]"],
+    items: [
+      "Licenciatura en Ingeniería en Computadores at Tecnológico de Costa Rica.",
+      "In progress since 2024; CV states current sixth-semester status.",
+    ],
+  },
+  {
+    title: "Academic highlights",
+    items: [
+      "Weighted general average: 92.95.",
+      "34 approved courses and no failed courses, according to the CV.",
+    ],
   },
   {
     title: "Professional interests",
-    items: ["[Professional interest]", "[Professional interest]"],
+    items: [
+      "Data structures and database-oriented systems.",
+      ".NET and application development.",
+      "Embedded systems, artificial intelligence, and cybersecurity.",
+    ],
   },
   {
     title: "Working principles",
-    items: ["[Working principle]", "[Working principle]", "[Working principle]"],
+    items: [
+      "Prioritize user experience, needs, and ease of use.",
+      "Coordinate work through version control, task distribution, testing, and problem solving.",
+      "Use documentation and structured review to make projects easier to maintain.",
+    ],
   },
   {
-    title: "Academic indicators or recognitions",
-    items: ["[Selected academic indicator or recognition]"],
+    title: "Leadership and involvement",
+    items: [
+      "IntegraTEC Computer Engineering leader in 2025.",
+      "Supported orientation and academic communication for new Computer Engineering students.",
+      "Coordinated with other student leaders, strengthening listening, leadership, and collaborative work.",
+    ],
+  },
+  {
+    title: "Languages",
+    items: [
+      "Spanish: native.",
+      "English: B2 listening and reading; B1 writing and speaking, according to the CV.",
+    ],
   },
 ];

@@ -1,19 +1,26 @@
 import { Section } from "../../components/layout/Section";
 import { SectionHeader } from "../../components/layout/SectionHeader";
 import { Reveal } from "../../components/ui/Reveal";
-import { aboutDetails } from "../../data/about";
+import { aboutDetails, aboutIntro } from "../../data/about";
 import styles from "./About.module.css";
 
-// About lays out profile categories that can later be replaced with final personal content.
+// About balances concise profile writing with structured facts that are easy to verify.
 export function About() {
   return (
     <Section id="about" labelledBy="about-title">
       <Reveal>
         <SectionHeader
           eyebrow="About me"
-          title="A focused profile foundation"
-          description="[Professional introduction]"
+          title="Building from academic work into professional practice"
+          description="A concise view of Santiago's current technical direction and verified public profile."
         />
+      </Reveal>
+      <Reveal>
+        <div className={styles.intro}>
+          {aboutIntro.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
       </Reveal>
       <div className={styles.grid}>
         {aboutDetails.map((detail, index) => (
